@@ -1,0 +1,18 @@
+// Endereços e conteudos ponteiros.
+#include <stdio.h>
+int main() {
+    int x = 10, *q, *p, y = 20, *r, v[] = {2,4,6,8,10,12,14,16,18,20};
+    char Um = '1', *s, *str = "Estrutura aula";
+    p = &x;
+    printf("%d\n", *p); 
+    printf("%p\n", *p);
+    x += 2;
+    printf("%d\n", *p);
+    q = &(*p);
+    printf("%p\n", *q); // exibir o endereco de p que q armazenou.
+    printf("%d\n", *q);
+    r = v;
+    printf("%d\n", *r);
+    printf("%s %c", str, Um);
+    return 0;
+}
